@@ -5,7 +5,7 @@ var cors = require("cors");
 var bodyParser = require("body-parser");
 
 var app = express();
-const port = process.env.port || 8000;
+const PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
@@ -27,4 +27,4 @@ app.post("/rc-subscribe", cors(), function (req, res) {
     }, 9000);
 });
 
-app.listen(port);
+app.listen(PORT);
