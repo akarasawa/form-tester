@@ -13,10 +13,10 @@ app.use(cors());
 app.options("/rc-subscribe", cors());
 
 app.get("/", function (req, res) {
-    res.sendFile("index.html");
+    res.sendFile("index.html", { root: __dirname });
 });
 
-app.post("/rc-subscribe", function (req, res) {
+app.post("/rc-subscribe", cors(), function (req, res) {
     setTimeout(function () {
         console.log(req.body);
     }, 9000);
