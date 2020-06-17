@@ -26,3 +26,5 @@ app.post("/rc-subscribe", cors(), function (req, res) {
         console.log(req.body);
     }, 9000);
 });
+
+app.listen(port);
