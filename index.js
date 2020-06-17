@@ -24,6 +24,13 @@ app.get("/rc-subscribe", cors(), function (req, res) {
 app.post("/rc-subscribe", cors(), function (req, res) {
     setTimeout(function () {
         console.log(req.body);
+
+        if (req.body.firstName === "Auden") {
+            res.status(500).send("Please eat your vegetables!");
+        } else {
+            res.status(200).json({ status: "Yay" });
+        }
+        res.end();
     }, 9000);
 });
 
