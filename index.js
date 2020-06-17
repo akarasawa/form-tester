@@ -16,6 +16,11 @@ app.get("/", function (req, res) {
     res.sendFile("index.html", { root: __dirname });
 });
 
+app.get("/rc-subscribe", cors(), function (req, res) {
+    res.status(200).write("you subscribed to something, yay");
+    res.end();
+});
+
 app.post("/rc-subscribe", cors(), function (req, res) {
     setTimeout(function () {
         console.log(req.body);
