@@ -1,29 +1,30 @@
 {
-  "name": "form-tester",
-  "version": "1.0.0",
-  "description": "test form with endpoints",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akarasawa/form-tester.git"
-  },
-  "keywords": [
-    "test",
-    "forms"
-  ],
-  "author": "Ashleigh G.",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/akarasawa/form-tester/issues"
-  },
-  "homepage": "https://github.com/akarasawa/form-tester#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "gulp": "^4.0.2"
-  }
+    "name": "form-tester",
+    "version": "1.0.0",
+    "description": "test form with endpoints",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akarasawa/form-tester.git"
+    },
+    "keywords": [
+        "test",
+        "forms"
+    ],
+    "author": "Ashleigh G.",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/akarasawa/form-tester/issues"
+    },
+    "homepage": "https://github.com/akarasawa/form-tester#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "gulp": "^4.0.2"
+    }
 }
