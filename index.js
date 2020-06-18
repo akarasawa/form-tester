@@ -28,7 +28,7 @@ app.post("/rc-subscribe", cors(), function (req, res) {
         if (req.body.firstName === "Auden") {
             res.status(500).json({ status: "No icecream!" }); //.send("Please eat your vegetables!");
         } else {
-            res.status(200).json({ status: "Yay" });
+            res.status(200).json({ status: "Ok, you can has icecream." });
         }
         res.end();
     }, 9000);
